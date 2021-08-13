@@ -1,12 +1,28 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCloudflare} from '@fortawesome/free-brands-svg-icons'
+import { faCloudRain, faSun } from '@fortawesome/free-solid-svg-icons';
+
 const Forecast = (props) => {
     let days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
     let data = [];
+    let i = 0;
     for (let index = 0; index < props.props.forecast.list.length; index++) {
         if (props.props.forecast.list[index]['dt_txt'].includes('15:00:00')) {
-            let date = new Date(props.props.forecast.list[index].dt_txt)
-            props.props.forecast.list[index]["date"] = days[date.getDay()]
-            data.push(props.props.forecast.list[index])
+            i++;
+            if (i < 4) {
+                let date = new Date(props.props.forecast.list[index].dt_txt)
+                props.props.forecast.list[index]["date"] = days[date.getDay()]
+                data.push(props.props.forecast.list[index])
+            }
         }
+    }
+    let icon;
+    if (props.props.francia.weather[0].main == 'Clouds') {
+        icon = faCloudflare
+    } else if (props.props.francia.weather[0].main == 'Clear') {
+        icon = faCloudRain
+    } else {
+        icon = faSun
     }
     return (
         <>
@@ -42,7 +58,10 @@ const Forecast = (props) => {
                             <h3 className="mb-0">Temperatura actual de Francia</h3>
                             <hr />
                             {
-                                <h1>{props.props.francia.main.temp}°</h1>
+                                <div>
+                                    <FontAwesomeIcon icon={icon} />
+                                    <h1>{props.props.francia.main.temp}°</h1>
+                                </div>
                             }
                         </div>
                         <div className="col-auto d-none d-lg-block">
