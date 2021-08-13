@@ -20,7 +20,7 @@
 ## Objetivos cumplidos
 * Consumir el API propuesto para la prueba
 * Declarar la temperatura actual de Bogotá en el banner superior
-* declarar el pronostico de 3 del clima de Bogotá
+* declarar el pronostico de 3 días del clima de Bogotá
 * declarar la temperatura actual de francia
 * No utilizar Fetch API y/o Axios
 * Utilzar **SuperAgent** para el consumo de los servicios de la respectiva API
@@ -34,5 +34,11 @@
 ## Anotaciones
 * Inteneté trabajar con Tailwind pero con la implementacion en NextJs hubo complicaciones y por limitacion de tiempo utilicé Bootstrap
 * Los push de los commits en mi perfil de GitHub es de un usuario coorporativo que uso.
+
+## Mas informacion
+* Pueden encontrar mas repos para validacion de mis conocimientos en mi perfil de GitHub:
+* https://github.com/cristianV0117/over - API CON NORMAS REST Y HATEOAS, implementando ADR, FrontController y S.O.L.I.D - (LUMEN - LARAVEL)
+* https://github.com/cristianV0117/crmapi - API API CON NORMAS REST Y HATEOAS, implementando ADR, FrontController y S.O.L.I.D - (SLIM PHP)
+* https://github.com/cristianV0117/FRONTENDBASE - Base de Front End con React JS
 
 ### *¡Gracias!*
