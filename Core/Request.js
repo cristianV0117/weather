@@ -12,7 +12,7 @@ export default class Request
 
     async forecast()
     {
-        const forecastBogotaResponse = await superagent.get(`https://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&cnt=20&appid=${process.env.API}`).then(res => {
+        const forecastBogotaResponse = await superagent.get(`https://api.openweathermap.org/data/2.5/forecast?q=bogota&units=metric&cnt=30&appid=${process.env.API}`).then(res => {
             return res.body
         })
 
