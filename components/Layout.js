@@ -1,9 +1,11 @@
 import Footer from './Footer'
+import Nav from './Nav'
 
 const Layout = ({children}) => {
     return (
         <>
-          <div className="container col-md-12 mt-5">
+          <Nav />
+          <div className="container col-md-12">
               {children}
           </div>
           <Footer />

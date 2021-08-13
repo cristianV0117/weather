@@ -11,37 +11,43 @@ const Forecast = (props) => {
     return (
         <>
             <hr />
-            <div className="row">
+            <div className="row mb-2 cardeable">
                 <div className="col-md-6">
-                    <div id="cardOne" className="card rounded-pill">
-                        <center>
-                            <h4>
-                            <p className="mt-5">
-                                Pronostico de Bogotá en los proximos 3 días
-                            </p>
+                    <div className="shadow-lg row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-dark">
+                        <div className="col p-4 d-flex flex-column position-static">
+                            <h3 className="mb-0">Pronostico de 3 días</h3>
+                            <hr />
+                            <ul className="list-group">
                             {
                                 data.map(item => (
-                                    <li className="mt-3" key={item.dt}>{item.date}: {item.main.temp}°</li>
+                                    <li key={item.dt} className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">{item.date}</div>
+                                        </div>
+                                        <span className="badge bg-primary rounded-pill">{item.main.temp}°</span>
+                                    </li>
+                                    
                                 ))
-                            }
-                            </h4>
-                        </center>
-                        <br />
+                            }       
+                            </ul>
+                        </div>
+                        <div className="col-auto d-none d-lg-block">
+                            <img width="300" height="250" src="/bogota.jpg" />
+                        </div>
                     </div>
                 </div>
                 <div className="col-md-6">
-                <div id="cardTwo" className="card rounded-pill">
-                        <center>
-                            <h4>
-                            <p className="mt-5">
-                                Temperatura actual de francia
-                            </p>
+                    <div className="bg-dark shadow-lg row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div className="col p-4 d-flex flex-column position-static">
+                            <h3 className="mb-0">Temperatura actual de Francia</h3>
+                            <hr />
                             {
-                                props.props.francia.main.temp
-                            }°
-                            </h4>
-                        </center>
-                        <br />
+                                <h1>{props.props.francia.main.temp}°</h1>
+                            }
+                        </div>
+                        <div className="col-auto d-none d-lg-block">
+                            <img width="300" height="250" src="/cardTwo.jpg" />
+                        </div>
                     </div>
                 </div>
             </div>
