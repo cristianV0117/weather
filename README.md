@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prueba practica con NextJS
+## Cristian Camilo Vasquez Osorio
 
-## Getting Started
+### Proyecto realizado del 12/08/2021 al 13/08/2021
 
-First, run the development server:
+## En el desarrollo se ha utilizado
+* NextJS v-11.0.1
+* Bootstrap v-5
+* SuperAgent npm - https://www.npmjs.com/package/superagent
+* API - https://openweathermap.org
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Herramientas de desarrollo utilizadas
+* Visual Studio Code
+* Git Bash
+* GitHub
+* Postman
+* Heroku
+* NodeJS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Objetivos cumplidos
+* Consumir el API propuesto para la prueba
+* Declarar la temperatura actual de Bogotá en el banner superior
+* declarar el pronostico de 3 del clima de Bogotá
+* declarar la temperatura actual de francia
+* No utilizar Fetch API y/o Axios
+* Utilzar **SuperAgent** para el consumo de los servicios de la respectiva API
+* Responsive design
+* Utilizar un framework, en este caso **NextJS**
+* Utilizar GitHub para el versionamiento de el sitio
+* Desplegar la aplicacion en el servcio **Heroku**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## PRODUCCION - https://app-weather-current.herokuapp.com/
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Anotaciones
+* Inteneté trabajar con Tailwind pero con la implementacion en NextJs hubo complicaciones y por limitacion de tiempo utilicé Bootstrap
+* Los push de los commits en mi perfil de GitHub es de un usuario coorporativo que uso.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### *¡Gracias!*
